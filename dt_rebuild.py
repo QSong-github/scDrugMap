@@ -64,7 +64,7 @@ def rebuilder(directory_path):
                             if row_data[i]=='0':
                                 pass
                             else:
-                                if pattern[i]==-99999: # none token
+                                if pattern[i]==-99999: # none
                                     pass
                                 else:
                                     seq_pattern_order_id_EXPscore.append((pattern[i],row_data[i]))
