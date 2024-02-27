@@ -57,9 +57,9 @@ def rebuilder(directory_path):
                             prompt.append(dictionary_genename_token_pair['<prompt_end>'])
                         elif i==1:
                             if 'sensitive' in row_data[i]:
-                                labels_cell.append(1)
-                            elif 'resistant' in row_data[i]:
                                 labels_cell.append(0)
+                            elif 'resistant' in row_data[i]:
+                                labels_cell.append(1)
                         else:
                             if row_data[i]=='0':
                                 pass
