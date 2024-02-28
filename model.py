@@ -7,15 +7,15 @@ import torch.nn as nn
 pretrained_model_name = "geneformer-6L-30M_CellClassifier_cardiomyopathies_220224/" #"geneformer-12L-30M/"
 
 def model_load_with_Lora_and_new_dict(pretrained_model_name):
-    model = BertForSequenceClassification.from_pretrained(
-        "geneformer-6L-30M_CellClassifier_cardiomyopathies_220224/",
+    model = BertForSequenceClassification.from_pretrained(    # 12L-30M model is for token cls，but we can use the embeddings
+        "geneformer-6L-30M_CellClassifier_cardiomyopathies_220224/",    
         num_labels=3,
         output_attentions=False,
         output_hidden_states=True
     )
 
     # dict emb update
-    base_emb_dict = torch.rand(10, 256)   # 10 new tokens
+    base_emb_dict = torch.rand(10, 256)   # add 10 new tokens
     model_state_dict = model.state_dict()
     new_dict_emb_value = torch.cat((model_state_dict['bert.embeddings.word_embeddings.weight'], base_emb_dict), dim=0)
 
