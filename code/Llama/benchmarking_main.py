@@ -191,10 +191,10 @@ def run():
                     data = [args.task, args.subtask, f, round(acc, 4), round(aur, 4), round(pre, 4), round(rcl, 4),
                             round(f1, 4), len(pred_all_)]
 
-                    # 打开一个CSV文件，准备写入数据
+                  
                     with open('output/metrics_embeds.csv', 'a', newline='') as file:
                         writer = csv.writer(file)
-                        # 将列表作为一行写入CSV文件
+                        
                         writer.writerow(data)
         #torch.save(model.state_dict(), './model_save/model.ckpt')
 
