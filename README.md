@@ -6,7 +6,7 @@
 ## Overview
 
 
-
+![The workflow of scDrugMap.](./src/model.jpg)
 
 
 ## Webserver 
