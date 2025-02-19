@@ -1,4 +1,4 @@
-# DrugTuner
+# scDrugMap
 
 ### This resource is an implementation of ''Fine-tuned large gene language model to predict drug sensitivity'' (DrugTuner). Our paper is released at [Here](http://。。。。).
 
