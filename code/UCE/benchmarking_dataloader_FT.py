@@ -201,11 +201,10 @@ def dataloader(args):
         dt_all.append(dataset)
 
     dataset_all = torch.utils.data.ConcatDataset(dt_all)
-    # 计算训练集和验证集的大小
+
     train_size = int(args.train_rate * len(dataset_all))
     test_size = len(dataset_all) - train_size
 
-    # 使用random_split进行随机分割
     train_dataset, test_dataset = random_split(dataset_all, [train_size, test_size])
     multi_dataset_sentence_collator = MultiDatasetSentenceCollator(args)
     train_data_loader = DataLoader(dataset=train_dataset, batch_size=args.train_batch_size, collate_fn=multi_dataset_sentence_collator,shuffle=True)
