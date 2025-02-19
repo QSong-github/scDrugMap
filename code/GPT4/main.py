@@ -15,8 +15,8 @@ import os
 from openai import OpenAI
 import pickle
 import csv
-# 设置OpenAI API密钥
-openai.api_key = 'sk-HsfyxMZoy6piN4U5vC6IaRtJFi7wT5RAblGLG-u7wdT3BlbkFJv5O8vF8njQyG7_zdobZ0YomUejRF-hGWWqLuvH3A0A'
+# Your key
+openai.api_key = '***********'
 client = OpenAI(
     # This is the default and can be omitted
     api_key=openai.api_key,
@@ -37,14 +37,14 @@ chunk_size=10
 
 
 def extract_data_from_string(text):
-    # 使用正则表达式查找大括号内以 "res:" 开头的数据
+  
     pattern = re.compile(r'\{res:([0-1,]+)\}')
     match = pattern.search(text)
 
     if match:
-        # 提取匹配的内容，并用逗号分割
+       
         data_string = match.group(1)
-        # 转换为列表并转为整数
+        
         data_list = [int(num) for num in data_string.split(',')]
         return data_list
     else:
@@ -70,13 +70,13 @@ for file in files_list_all:
             input = pre_prompt + '\n\n' + source_prompt + '\n' + source + '\n\n' + gene_prompt + '\n' + str(content) + '\n\n' + post_prompt
 
             response = client.chat.completions.create(
-                model="gpt-4o-mini-2024-07-18",  # 使用合适的模型，这里使用了GPT-3.5 Turbo
+                model="gpt-4o-mini-2024-07-18",  
                 messages=[
                     {"role": "user", "content": input}
                 ]
             )
 
-            # 获取ChatGPT的响应消息
+           
             answer = response.choices[0].message.content
 
             predict = extract_data_from_string(answer)
@@ -98,10 +98,10 @@ for file in files_list_all:
 
         wr_data = [file[:-4], round(acc, 4), round(auroc, 4), round(precision, 4), round(recall, 4),round(f1, 4)]
 
-        # 打开一个CSV文件，准备写入数据
+       
         with open('./output/metrics.csv', 'a', newline='') as f:
             writer = csv.writer(f)
-            # 将列表作为一行写入CSV文件
+            
             writer.writerow(wr_data)
         with open('./answer/chatgpt_logs_'+file[:-4]+'.pkl', "wb") as pklf:
             pickle.dump(output, pklf)
