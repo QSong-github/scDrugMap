@@ -37,11 +37,11 @@ class BioDataset(Dataset):
 
 def dataloader(args):
     ebddataset = BioDataset(args)
-    # 计算训练集和验证集的大小
+    
     train_size = int(args.train_rate * len(ebddataset))
     test_size = len(ebddataset) - train_size
 
-    # 使用random_split进行随机分割
+
     train_dataset, test_dataset = random_split(ebddataset, [train_size, test_size])
 
     train_data_loader = DataLoader(dataset=train_dataset, batch_size=args.train_batch_size, shuffle=True)
