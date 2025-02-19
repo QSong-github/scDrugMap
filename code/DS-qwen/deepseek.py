@@ -34,14 +34,14 @@ chunk_size=10
 
 
 def extract_data_from_string(text):
-    # 使用正则表达式查找大括号内以 "res:" 开头的数据
+  
     pattern = re.compile(r'\{res:([0-1,]+)\}')
     match = pattern.search(text)
 
     if match:
-        # 提取匹配的内容，并用逗号分割
+       
         data_string = match.group(1)
-        # 转换为列表并转为整数
+      
         data_list = [int(num) for num in data_string.split(',')]
         return data_list
     else:
@@ -88,10 +88,10 @@ for file in files_list_all:
 
         wr_data = [file[:-4], round(acc, 4), round(auroc, 4), round(precision, 4), round(recall, 4),round(f1, 4)]
 
-        # 打开一个CSV文件，准备写入数据
+  
         with open('./output/metrics.csv', 'a', newline='') as f:
             writer = csv.writer(f)
-            # 将列表作为一行写入CSV文件
+      
             writer.writerow(wr_data)
         with open('./answer/chatgpt_logs_'+file[:-4]+'.pkl', "wb") as pklf:
             pickle.dump(output, pklf)
