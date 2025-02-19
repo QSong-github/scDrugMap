@@ -130,7 +130,7 @@ def run():
             roc['ebd']=ebd_all_
             with open('./output/testset_records.pkl', 'wb') as rocpkl:
                 pickle.dump(roc, rocpkl)
-            torch.save(model.state_dict(), './output/model.pth')  # 保存模型参数
+            torch.save(model.state_dict(), './output/model.pth') 
 
 
 if __name__ == '__main__':
