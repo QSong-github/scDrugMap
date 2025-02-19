@@ -9,8 +9,8 @@
 ![The workflow of scDrugMap.](./src/model.png)
 
 
-## Webserver 
-Code-free use of scDrugMap in our [website](https://scdrugmap.com/)
+##  Usage
+We provide framework codes for 8 benchmark single-cell language models and 3 large language models for reference. We strongly recommend using our code-free [Webserver](https://scdrugmap.com/)
 
 
 
