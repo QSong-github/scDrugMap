@@ -107,5 +107,4 @@ Please refer to our paper.
 [8].Rosen, Y. et al. Universal cell embeddings: A foundation model for cell biology. bioRxiv, 2023.2011. 2028.568918 (2023).
 [9].AI@Meta Llama 3 Model Card. https://huggingface.co/meta-llama/Meta-Llama-3-8B (2024).
 [10].OpenAI GPT-4o mini. https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/ (2024).
-[11].https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 ```
