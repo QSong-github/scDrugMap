@@ -10,7 +10,7 @@
 
 
 ##  Usage
-We provide framework codes for 8 benchmark single-cell language models and 3 large language models for reference. We strongly recommend using our code-free [Webserver](https://scdrugmap.com/)
+We provide framework codes for 8 benchmark single-cell language models and 2 large language models for reference. We strongly recommend using our code-free [Webserver](https://scdrugmap.com/)
 
 
 
