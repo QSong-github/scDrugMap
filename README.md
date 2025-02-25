@@ -15,47 +15,47 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
 
 ### Running
-   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [Webserver](https://scdrugmap.com/), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [Webserver](https://scdrugmap.com/), [OpenBioMed/cellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation)). The complete code of the project is in [zenodo](https://scdrugmap.com/).
+   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [tGPT](https://github.com/deeplearningplus/tGPT), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [CellPLM](https://github.com/OmicsML/CellPLM), [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation)). The complete code of the project is in [zenodo](https://scdrugmap.com/).
    
-   (1) Ddownload the required data.
+   (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
    ```bash
    $ cd /path/to/data
    $ python data_download.py
    ```
    
-   (2) Get the frequency statistics. Of course, we also provide the results of frequency statistics saved as txt files in this directory.
+   (2) [tGPT](https://github.com/deeplearningplus/tGPT)
    ```bash
    $ cd /path/to/data
    $ python data_process.py
    ```
-   (3) Build the dataset.
+   (3) [UCE](https://github.com/snap-stanford/uce)
    ```bash
    $ cd /path/to/data
    $ python dataset_making.py
    ```
    
-   (4) Tokenize the input sequence
+   (4) [scBERT](https://github.com/TencentAILabHealthcare/scBERT)
    ```bash
    $ cd /path/to/data
    $ python dt_rebuild.py
    ```
    
-   (5) Run AntiFormer and get the prediction results.
+   (5) [CellPLM]([https://scdrugmap.com/]
    ```bash
    $ cd /path/to/AntiFormer
    $ python main.py
    ```
-   (6) Run AntiFormer and get the prediction results.
+   (6) [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed)
    ```bash
    $ cd /path/to/AntiFormer
    $ python main.py
    ```
-   (7) Run AntiFormer and get the prediction results.
+   (7) [scGPT](https://github.com/bowang-lab/scGPT)
    ```bash
    $ cd /path/to/AntiFormer
    $ python main.py
    ```
-   (8) Run AntiFormer and get the prediction results.
+   (8) [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation))
    ```bash
    $ cd /path/to/AntiFormer
    $ python main.py
