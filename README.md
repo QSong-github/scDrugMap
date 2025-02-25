@@ -15,7 +15,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
 
 ### Running
-   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [Webserver](https://scdrugmap.com/), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [scGPT](https://github.com/bowang-lab/scGPT), [Webserver](https://scdrugmap.com/). The complete code of the project is in (https://scdrugmap.com/).
+   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [Webserver](https://scdrugmap.com/), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [Webserver](https://scdrugmap.com/), [OpenBioMed/cellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation)). The complete code of the project is in [zenodo](https://scdrugmap.com/).
    
    (1) Ddownload the required data.
    ```bash
