@@ -13,7 +13,39 @@
 We provide framework codes for 8 benchmark single-cell language models and 2 large language models for reference. We strongly recommend using our code-free [Webserver](https://scdrugmap.com/)
 
 
+## Running
 
+### Train from scratch
+   The codes for dataset creating are stored in the ```./AntiFormer/data``` directory. If you want to train from scratch, you need to start with data processing.
+   
+   (1) Ddownload the required data.
+   ```bash
+   $ cd /path/to/data
+   $ python data_download.py
+   ```
+   
+   (2) Get the frequency statistics. Of course, we also provide the results of frequency statistics saved as txt files in this directory.
+   ```bash
+   $ cd /path/to/data
+   $ python data_process.py
+   ```
+   (3) Build the dataset.
+   ```bash
+   $ cd /path/to/data
+   $ python dataset_making.py
+   ```
+   
+   (4) Tokenize the input sequence
+   ```bash
+   $ cd /path/to/data
+   $ python dt_rebuild.py
+   ```
+   
+   (5) Run AntiFormer and get the prediction results.
+   ```bash
+   $ cd /path/to/AntiFormer
+   $ python main.py
+   ```
 
 
 ## Dataset
