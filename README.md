@@ -22,17 +22,46 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    # creating dataset
    $ cd /path/to/data
    $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    
    (2) [tGPT](https://github.com/deeplearningplus/tGPT)
    ```bash
+   # creating dataset
    $ cd /path/to/data
-   $ python data_process.py
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    (3) [UCE](https://github.com/snap-stanford/uce)
    ```bash
+   # creating dataset
    $ cd /path/to/data
-   $ python dataset_making.py
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    
    (4) [scBERT](https://github.com/TencentAILabHealthcare/scBERT)
@@ -43,23 +72,63 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    
    (5) [CellPLM](https://github.com/OmicsML/CellPLM)
    ```bash
-   $ cd /path/to/AntiFormer
-   $ python main.py
+   # creating dataset
+   $ cd /path/to/data
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    (6) [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed)
    ```bash
-   $ cd /path/to/AntiFormer
-   $ python main.py
+   # creating dataset
+   $ cd /path/to/data
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    (7) [scGPT](https://github.com/bowang-lab/scGPT)
    ```bash
-   $ cd /path/to/AntiFormer
-   $ python main.py
+   # creating dataset
+   $ cd /path/to/data
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
    (8) [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation))
    ```bash
-   $ cd /path/to/AntiFormer
-   $ python main.py
+   # creating dataset
+   $ cd /path/to/data
+   $ python data_download.py
+   # generating fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fixed embedding
+   $ cd /path/to/data
+   $ python data_download.py
+   # train and test by fine-tuning with LOAR
+   $ cd /path/to/data
+   $ python data_download.py
    ```
 
 
