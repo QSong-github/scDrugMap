@@ -13,10 +13,9 @@
 We provide framework codes for 8 benchmark single-cell language models and 2 large language models for reference. We strongly recommend using our code-free [Webserver](https://scdrugmap.com/)
 
 
-## Running
 
-### Train from scratch
-   The codes for dataset creating are stored in the ```./AntiFormer/data``` directory. If you want to train from scratch, you need to start with data processing.
+### Running
+   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/), [Webserver](https://scdrugmap.com/). The complete code of the project is in (https://scdrugmap.com/).
    
    (1) Ddownload the required data.
    ```bash
