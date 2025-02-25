@@ -15,10 +15,11 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
 
 ### Running
-   Due to conflicting packages in the environments of various models, we cannot provide a unified operating environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [tGPT](https://github.com/deeplearningplus/tGPT), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [CellPLM](https://github.com/OmicsML/CellPLM), [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation](https://github.com/biomap-research/scFoundation). The complete code of the project is in [zenodo](https://scdrugmap.com/).
+   Due to conflicting packages in the environments of various models, we cannot provide a unified running environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [tGPT](https://github.com/deeplearningplus/tGPT), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [CellPLM](https://github.com/OmicsML/CellPLM), [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation](https://github.com/biomap-research/scFoundation). The complete code of the project is in [zenodo](https://scdrugmap.com/).
    
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
    ```bash
+   # creating dataset
    $ cd /path/to/data
    $ python data_download.py
    ```
