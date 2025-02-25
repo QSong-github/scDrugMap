@@ -125,18 +125,16 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python benchmarking_main_FT.py
    ```
 
-   (9) [scFoundation](https://github.com/biomap-research/scFoundation)
+   (9) [Llama](https://github.com/meta-llama/llama3)
    ```bash
    # entering the code directory
-   $ cd ./benchmark/LLAMA/
+   $ cd ./benchmark/Llama/
    # creating dataset
    $ python dataset_making.py
    # generating fixed embedding
-   $ python get_ebd.py
+   $ python get_embeds.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
-   $ python benchmarking_main_FT.py
    ```
 
    (10) [GPT4-mini](https://openai.com/index/gpt-4/)
