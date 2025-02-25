@@ -45,6 +45,21 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ cd /path/to/AntiFormer
    $ python main.py
    ```
+   (6) Run AntiFormer and get the prediction results.
+   ```bash
+   $ cd /path/to/AntiFormer
+   $ python main.py
+   ```
+   (7) Run AntiFormer and get the prediction results.
+   ```bash
+   $ cd /path/to/AntiFormer
+   $ python main.py
+   ```
+   (8) Run AntiFormer and get the prediction results.
+   ```bash
+   $ cd /path/to/AntiFormer
+   $ python main.py
+   ```
 
 
 ## Dataset
