@@ -20,54 +20,53 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
    ```bash
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
+   $ python dataset_making.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
    
    (2) [tGPT](https://github.com/deeplearningplus/tGPT)
    ```bash
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ cd ./benchmark/tGPT-main/tGPT-main/tGPT-main/
+   $ python dataset_making.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
+
    (3) [UCE](https://github.com/snap-stanford/uce)
    ```bash
    # creating dataset
    $ cd /path/to/data
    $ python data_download.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
    
    (4) [scBERT](https://github.com/TencentAILabHealthcare/scBERT)
    ```bash
+   # creating dataset
    $ cd /path/to/data
-   $ python dt_rebuild.py
+   $ python data_download.py
+   # generating fixed embedding
+   $ python get_ebd.py
+   # train and test by fixed embedding
+   $ python benchmarking_main_EBD.py
+   # train and test by fine-tuning with LOAR
+   $ python benchmarking_main_FT.py
    ```
    
    (5) [CellPLM](https://github.com/OmicsML/CellPLM)
@@ -76,59 +75,50 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ cd /path/to/data
    $ python data_download.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
+
    (6) [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed)
    ```bash
    # creating dataset
    $ cd /path/to/data
    $ python data_download.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
+
    (7) [scGPT](https://github.com/bowang-lab/scGPT)
    ```bash
    # creating dataset
    $ cd /path/to/data
    $ python data_download.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
+
    (8) [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation))
    ```bash
    # creating dataset
    $ cd /path/to/data
    $ python data_download.py
    # generating fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python get_ebd.py
    # train and test by fixed embedding
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python benchmarking_main_FT.py
    ```
 
 
