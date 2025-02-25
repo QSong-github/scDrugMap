@@ -19,8 +19,9 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
    ```bash
-   # creating dataset
+   # entering the code directory
    $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
+   # creating dataset
    $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
@@ -32,8 +33,9 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    
    (2) [tGPT](https://github.com/deeplearningplus/tGPT)
    ```bash
-   # creating dataset
+   # entering the code directory
    $ cd ./benchmark/tGPT-main/tGPT-main/tGPT-main/
+   # creating dataset
    $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
@@ -45,9 +47,10 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
    (3) [UCE](https://github.com/snap-stanford/uce)
    ```bash
+   # entering the code directory
+   $ cd ./benchmark/UCE-main/UCE-main/
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
@@ -58,9 +61,10 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    
    (4) [scBERT](https://github.com/TencentAILabHealthcare/scBERT)
    ```bash
+   # entering the code directory
+   $ cd ./benchmark/scBERT-master/scBERT-master/
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
@@ -71,9 +75,10 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    
    (5) [CellPLM](https://github.com/OmicsML/CellPLM)
    ```bash
+   # entering the code directory
+   $ cd ./benchmark/CellPLM-main/CellPLM-main/
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
@@ -84,9 +89,8 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
    (6) [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed)
    ```bash
-   # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   # entering the code directory
+   $ cd ./benchmark/OpenBioMed-main/OpenBioMed-main/
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
@@ -97,9 +101,8 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
 
    (7) [scGPT](https://github.com/bowang-lab/scGPT)
    ```bash
-   # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   # entering the code directory
+   $ cd ./benchmark/scGPT-main/scGPT-main/scgpt/tasks/
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
@@ -108,17 +111,40 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python benchmarking_main_FT.py
    ```
 
-   (8) [scFoundation]([https://scdrugmap.com/](https://github.com/biomap-research/scFoundation))
+   (8) [scFoundation](https://github.com/biomap-research/scFoundation)
    ```bash
+   # entering the code directory
+   $ cd ./benchmark/scFoundation-main/scFoundation-main/model/
    # creating dataset
-   $ cd /path/to/data
-   $ python data_download.py
+   $ python dataset_making.py
    # generating fixed embedding
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
    # train and test by fine-tuning with LOAR
    $ python benchmarking_main_FT.py
+   ```
+
+   (9) [scFoundation](https://github.com/biomap-research/scFoundation)
+   ```bash
+   # entering the code directory
+   $ cd ./benchmark/LLAMA/
+   # creating dataset
+   $ python dataset_making.py
+   # generating fixed embedding
+   $ python get_ebd.py
+   # train and test by fixed embedding
+   $ python benchmarking_main_EBD.py
+   # train and test by fine-tuning with LOAR
+   $ python benchmarking_main_FT.py
+   ```
+
+   (10) [GPT4-mini](https://openai.com/index/gpt-4/)
+   ```bash
+   # entering the code directory
+   $ cd ./benchmark/GPT4/
+   # prediction
+   $ python main.py
    ```
 
 
