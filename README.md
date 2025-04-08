@@ -23,7 +23,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
    
@@ -37,7 +37,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
 
@@ -51,7 +51,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
    
@@ -65,7 +65,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
    
@@ -79,7 +79,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
 
@@ -91,7 +91,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
 
@@ -117,7 +117,7 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    $ python get_ebd.py
    # train and test by fixed embedding
    $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LOAR
+   # train and test by fine-tuning with LORA
    $ python benchmarking_main_FT.py
    ```
 
