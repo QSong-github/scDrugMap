@@ -5,29 +5,20 @@ scDrugMap is an integrated Python toolkit and interactive web server designed fo
 In addition to robust performance evaluation, scDrugMap supports various training strategies, including layer freezing, fine-tuning via LoRA, and zero-shot inference, and includes tools for biomarker discovery, model interpretability, and drug resistance analysis.
 
 ## Key Features
-🧬 Support for 10 Foundation Models:
-•	8 single-cell foundation models (e.g., scFoundation, scGPT, tGPT)
-•	2 general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
-⚙️ Multi-strategy Model Training:
-•	Layer-freezing
-•	Fine-tuning with LoRA (Low-Rank Adaptation)
-•	Zero-shot/few-shot prediction
-📊 Two Evaluation Strategies:
-•	Pooled-data evaluation: Train/test on aggregated datasets
-•	Cross-data evaluation: Test generalizability across distinct datasets
-📁 Rich and Curated Dataset Repository:
-•	326,751 single cells (primary collection)
-•	18,856 single cells (validation collection)
-•	14 cancer types, 5 tissue types, 3 therapy types, and 21 regimens
-🌐 Web Interface for Easy Access:
-•	Explore models, datasets, predictions, and visualizations via https://scdrugmap.com
+
+🧬 Support for 10 Foundation Models: eight single-cell foundation models (e.g., scFoundation, scGPT, tGPT), two general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
+
+⚙️ Multi-strategy Model Training: Layer-freezing; Fine-tuning with LoRA (Low-Rank Adaptation); Zero-shot prediction
+
+📊 Two Evaluation Strategies: Pooled-data evaluation; Cross-data evaluation
+
+📁 Rich and Curated Dataset Repository: 326,751 single cells (primary collection); 18,856 single cells (validation collection); 14 cancer types, 5 tissue types, 21 treatment regimens
+
+🌐 Web Interface for Easy Access: Explore models, datasets, predictions via https://scdrugmap.com
 
 ## Web Server
-The web server enables users to:
-	•	Upload scRNA-seq data
-	•	Select models and evaluation settings
-	•	Predict drug response at single-cell resolution
-	•	Visualize results interactively
+The web server enables users to: Upload scRNA-seq data; Select models and evaluation settings; Predict drug response at single-cell resolution; Visualize results interactively
+
 🔗 Visit: https://scdrugmap.com
 
 
