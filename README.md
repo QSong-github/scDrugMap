@@ -4,7 +4,7 @@
 scDrugMap is an integrated Python toolkit and interactive web server designed for predicting drug response at single-cell resolution using large-scale foundation models (FMs). This framework provides a comprehensive benchmarking platform to evaluate model performance across diverse cancer types, therapy classes, tissue types, and drug regimens.
 In addition to robust performance evaluation, scDrugMap supports various training strategies, including layer freezing, fine-tuning via LoRA, and zero-shot inference, and includes tools for biomarker discovery, model interpretability, and drug resistance analysis.
 
-## Key Features
+## Key Features 
 
 🧬 Support for 10 Foundation Models: eight single-cell foundation models (e.g., scFoundation, scGPT, tGPT), two general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
 
@@ -16,7 +16,7 @@ In addition to robust performance evaluation, scDrugMap supports various trainin
 
 🌐 Web Interface for Easy Access: Explore models, datasets, predictions via https://scdrugmap.com
 
-## Web Server
+## Web Server 🚀
 The web server enables users to: Upload scRNA-seq data; Select models and evaluation settings; Predict drug response at single-cell resolution; Visualize results interactively
 
 🔗 Visit: https://scdrugmap.com
