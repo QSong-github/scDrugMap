@@ -1,13 +1,34 @@
-# scDrugMap
-
+# scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction from Single-Cell Transcriptomic Data
 
 ## Overview
+scDrugMap is an integrated Python toolkit and interactive web server designed for predicting drug response at single-cell resolution using large-scale foundation models (FMs). This framework provides a comprehensive benchmarking platform to evaluate model performance across diverse cancer types, therapy classes, tissue types, and drug regimens.
+In addition to robust performance evaluation, scDrugMap supports various training strategies, including layer freezing, fine-tuning via LoRA, and zero-shot inference, and includes tools for biomarker discovery, model interpretability, and drug resistance analysis.
 
+## Key Features
+🧬 Support for 10 Foundation Models:
+•	8 single-cell foundation models (e.g., scFoundation, scGPT, tGPT)
+•	2 general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
+⚙️ Multi-strategy Model Training:
+•	Layer-freezing
+•	Fine-tuning with LoRA (Low-Rank Adaptation)
+•	Zero-shot/few-shot prediction
+📊 Two Evaluation Strategies:
+•	Pooled-data evaluation: Train/test on aggregated datasets
+•	Cross-data evaluation: Test generalizability across distinct datasets
+📁 Rich and Curated Dataset Repository:
+•	326,751 single cells (primary collection)
+•	18,856 single cells (validation collection)
+•	14 cancer types, 5 tissue types, 3 therapy types, and 21 regimens
+🌐 Web Interface for Easy Access:
+•	Explore models, datasets, predictions, and visualizations via https://scdrugmap.com
 
-
-##  Usage
-We provide framework codes for 8 benchmark single-cell language models and 2 large language models for reference. We strongly recommend using our code-free [webserver](https://scdrugmap.com/)
-
+## Web Server
+The web server enables users to:
+	•	Upload scRNA-seq data
+	•	Select models and evaluation settings
+	•	Predict drug response at single-cell resolution
+	•	Visualize results interactively
+🔗 Visit: https://scdrugmap.com
 
 
 ### Running
@@ -140,11 +161,6 @@ We provide framework codes for 8 benchmark single-cell language models and 2 lar
    # prediction
    $ python main.py
    ```
-
-
-## Dataset
-
-
 
 ## Reference
 ```
