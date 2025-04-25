@@ -24,11 +24,7 @@ In addition to robust performance evaluation, scDrugMap supports various trainin
   - 14 cancer types, 5 tissue types, 3 therapy types, and 21 regimens
 
 - **🌐 Web Interface for Easy Access**:
-  - Upload scRNA-seq data
-  - Select models and evaluation settings
-  - Predict drug response at single-cell resolution
-  - Visualize results interactively
-
+  - Explore models, datasets, predictions, and visualizations via https://scdrugmap.com
 
 
 
@@ -36,6 +32,9 @@ In addition to robust performance evaluation, scDrugMap supports various trainin
 The web server enables users to: Upload scRNA-seq data; Select models and evaluation settings; Predict drug response at single-cell resolution; Visualize results interactively
 
 🔗 Visit: https://scdrugmap.com
+
+### Installation
+Clone the repository: git clone https://github.com/QSong-github/scDrugMap.git
 
 
 ### Running
@@ -173,7 +172,7 @@ The web server enables users to: Upload scRNA-seq data; Select models and evalua
    $ python main.py
    ```
 
-## Reference
+### Reference
 ```
 [1].Shen, H. et al. Generative pretraining from large-scale transcriptomes: Implications for single-cell deciphering and clinical translation. bioRxiv, 2022.2001. 2031.478596 (2022).
 [2].Yang, F. et al. scBERT as a large-scale pretrained deep language model for cell type annotation of single-cell RNA-seq data. Nature Machine Intelligence 4, 852-866 (2022).
@@ -186,3 +185,8 @@ The web server enables users to: Upload scRNA-seq data; Select models and evalua
 [9].AI@Meta Llama 3 Model Card. https://huggingface.co/meta-llama/Meta-Llama-3-8B (2024).
 [10].OpenAI GPT-4o mini. https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/ (2024).
 ```
+
+### Citation
+
+### License
+MIT License © Qianqian Song Lab
