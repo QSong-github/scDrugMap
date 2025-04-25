@@ -44,8 +44,10 @@ You can also follow the original environment installation instructions for every
 ### Getting Started
    (0) One-click launch
    ```bash
-   # Specify a model, e.g. scFoundation, scGPT
-   $ python predict_response.py --model scFoundation 
+   # entering the project directory
+   $ cd ./benchmark/
+   # Specify a model (e.g. scFoundation, scGPT) and training mode (EBD and FT)
+   $ python predict_response.py --model scGPT --mode EBD
    ```
 
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
