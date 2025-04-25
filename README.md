@@ -1,22 +1,38 @@
-## scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction
+# scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction
 
-## Overview
+### Overview
 scDrugMap is an integrated Python toolkit and interactive web server designed for predicting drug response at single-cell resolution using large-scale foundation models (FMs). This framework provides a comprehensive benchmarking platform to evaluate model performance across diverse cancer types, therapy classes, tissue types, and drug regimens.
 In addition to robust performance evaluation, scDrugMap supports various training strategies, including layer freezing, fine-tuning via LoRA, and zero-shot inference, and includes tools for biomarker discovery, model interpretability, and drug resistance analysis.
 
-## Key Features 
+### Key Features
+- **🧬 Support for 10 Foundation Models**:
+  - 8 single-cell foundation models (e.g., scFoundation, scGPT, tGPT)
+  - 2 general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
 
-🧬 Support for 10 Foundation Models: eight single-cell foundation models (e.g., scFoundation, scGPT, tGPT), two general-purpose LLMs (LLaMa3-8B, GPT4o-mini)
+- **⚙️ Multi-strategy Model Training**:
+  - Layer-freezing
+  - Fine-tuning with LoRA (Low-Rank Adaptation)
+  - Zero-shot/few-shot prediction
 
-⚙️ Multi-strategy Model Training: Layer-freezing; Fine-tuning with LoRA (Low-Rank Adaptation); Zero-shot prediction
+- **📊 Two Evaluation Strategies**:
+  - Pooled-data evaluation: Train/test on aggregated datasets
+  - Cross-data evaluation: Test generalizability across distinct datasets
 
-📊 Two Evaluation Strategies: Pooled-data evaluation; Cross-data evaluation
+- **📁 Rich and Curated Dataset Repository**:
+  - 326,751 single cells (primary collection)
+  - 18,856 single cells (validation collection)
+  - 14 cancer types, 5 tissue types, 3 therapy types, and 21 regimens
 
-📁 Rich and Curated Dataset Repository: 326,751 single cells (primary collection); 18,856 single cells (validation collection); 14 cancer types, 5 tissue types, 21 treatment regimens
+- **🌐 Web Interface for Easy Access**:
+  - Upload scRNA-seq data
+  - Select models and evaluation settings
+  - Predict drug response at single-cell resolution
+  - Visualize results interactively
 
-🌐 Web Interface for Easy Access: Explore models, datasets, predictions via https://scdrugmap.com
 
-## Web Server 🚀
+
+
+### Web Server 🚀
 The web server enables users to: Upload scRNA-seq data; Select models and evaluation settings; Predict drug response at single-cell resolution; Visualize results interactively
 
 🔗 Visit: https://scdrugmap.com
@@ -24,7 +40,11 @@ The web server enables users to: Upload scRNA-seq data; Select models and evalua
 
 ### Running
    Due to conflicting packages in the environments of various models, we cannot provide a unified running environment. Please refer to the original installation instructions of each project: [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [tGPT](https://github.com/deeplearningplus/tGPT), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [CellPLM](https://github.com/OmicsML/CellPLM), [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation](https://github.com/biomap-research/scFoundation). The complete code of the project is in [zenodo](https://zenodo.org/records/14938211).
-   
+   (0)
+   ```sh
+   python predict_response.py --model scFoundation --input data/example_input.h5ad
+   ```
+
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
    ```bash
    # entering the code directory
