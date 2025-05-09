@@ -47,7 +47,7 @@ You can also follow the original environment installation instructions for every
    # entering the project directory
    $ cd ./benchmark/
    # Specify a model (e.g. scFoundation, scGPT) and training mode (EBD and FT)
-   $ python predict_response.py --model scGPT --mode EBD
+   $ python launcher.py --model scGPT --mode EBD
    ```
 
    (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
