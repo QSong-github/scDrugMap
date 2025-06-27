@@ -193,6 +193,11 @@ You can also follow the original environment installation instructions for every
 ```
 
 ### Citation
-
+@article{wang2025scdrugmap,
+  title={scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction},
+  author={Wang, Qing and Pan, Yining and Zhou, Minghao and Tang, Zijia and Wang, Yanfei and Wang, Guangyu and Song, Qianqian},
+  journal={arXiv preprint arXiv:2505.05612},
+  year={2025}
+}
 ### License
 MIT License © Qianqian Song Lab
