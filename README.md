@@ -192,6 +192,35 @@ You can also follow the original environment installation instructions for every
 [10].OpenAI GPT-4o mini. https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/ (2024).
 ```
 
+### Docker Deployment 🐳
+
+For quick deployment using Docker Compose:
+
+```bash
+# Clone the repository
+git clone https://github.com/QSong-github/scDrugMap.git
+cd scDrugMap
+
+# Start the services
+docker-compose up -d
+
+# Check service status
+docker-compose ps
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+**Important Notes:**
+- The backend image contains multiple LLM weights and is quite large (~10GB+), so the initial pull may take some time depending on your internet connection
+- The frontend will be available at: http://localhost:3000
+- The backend API will be available at: http://localhost:8000
+- Both services will start automatically and the frontend will wait for the backend to be ready
+
+
 ### Citation
 @article{wang2025scdrugmap,
   title={scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction},

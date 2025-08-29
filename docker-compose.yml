@@ -1,0 +1,36 @@
+# version: "3.9"
+
+services:
+  backend:
+    image: minghaozhou01/scdrugmap-backend:latest   # ← 从 Docker Hub 拉
+    container_name: scdrugmap-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=geneAnalysis.settings
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+      - TRANSFORMERS_NO_TORCHVISION=1
+    healthcheck:
+      test: ["CMD", "sh", "-c", "nc -z localhost 8000 || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+    # 如需 GPU，在运行命令加 --gpus all（见下方说明）
+
+  frontend:
+    image: minghaozhou01/scdrugmap-frontend:latest  # ← 从 Docker Hub 拉
+    container_name: scdrugmap-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      # 浏览器调用后端用 localhost（宿主机端口映射到 backend:8000）
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NODE_ENV=production
+      # 可选：SSR/Node 侧直连后端容器（如果你的前端服务端代码需要）
+      - INTERNAL_API_URL=http://backend:8000
+    depends_on:
+      - backend
+
+# 如需挂卷可启用
+# volumes:
+#   hf_cache:
