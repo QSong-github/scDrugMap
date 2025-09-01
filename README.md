@@ -41,6 +41,28 @@ Set up your environment: `conda env create -f env.yaml`
 You can also follow the original environment installation instructions for every model.
 [Geneformer](https://huggingface.co/ctheodoris/Geneformer), [tGPT](https://github.com/deeplearningplus/tGPT), [UCE](https://github.com/snap-stanford/uce), [scBERT](https://github.com/TencentAILabHealthcare/scBERT), [CellPLM](https://github.com/OmicsML/CellPLM), [OpenBioMed/CellLM](https://github.com/PharMolix/OpenBioMed), [scGPT](https://github.com/bowang-lab/scGPT), [scFoundation](https://github.com/biomap-research/scFoundation). The complete code of the project is in [zenodo](https://zenodo.org/records/14938211).
 
+
+### Docker Deployment 🐳
+
+For quick deployment using Docker Compose:
+
+```bash
+# Clone the repository
+git clone https://github.com/QSong-github/scDrugMap.git
+cd scDrugMap
+
+# Start the services
+docker-compose up -d
+
+# Check service status
+docker-compose ps
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
 ### Getting Started
    (0) One-click launch
    ```bash
@@ -190,28 +212,6 @@ You can also follow the original environment installation instructions for every
 [8].Rosen, Y. et al. Universal cell embeddings: A foundation model for cell biology. bioRxiv, 2023.2011. 2028.568918 (2023).
 [9].AI@Meta Llama 3 Model Card. https://huggingface.co/meta-llama/Meta-Llama-3-8B (2024).
 [10].OpenAI GPT-4o mini. https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/ (2024).
-```
-
-### Docker Deployment 🐳
-
-For quick deployment using Docker Compose:
-
-```bash
-# Clone the repository
-git clone https://github.com/QSong-github/scDrugMap.git
-cd scDrugMap
-
-# Start the services
-docker-compose up -d
-
-# Check service status
-docker-compose ps
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
 ```
 
 **Important Notes:**
