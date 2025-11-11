@@ -1,4 +1,5 @@
 # scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction
+[![DOI](https://zenodo.org/badge/761865504.svg)](https://doi.org/10.5281/zenodo.17576320)
 
 ### Overview
 scDrugMap is an integrated Python toolkit and interactive web server designed for predicting drug response at single-cell resolution using large-scale foundation models (FMs). This framework provides a comprehensive benchmarking platform to evaluate model performance across diverse cancer types, therapy classes, tissue types, and drug regimens.
